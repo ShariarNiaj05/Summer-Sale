@@ -28,18 +28,101 @@
         </section>
     </header>
 
-    <main class="mt-20">
-        <!-- product section  -->
-        <h2>Kitchenware</h2>
-        <div>
-            <!-- product card -->
+    <main class="flex flex-col lg:flex-row mt-20 justify-start">
+        <!-- product section  1-->
+        <div class="flex-1 lg:ml-36 items-center justify-center">
+            <!-- Kitchenware -->
+            <h2 class="text-4xl font-bold">Kitchenware</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:w-3/4 ">
+                <!-- product card 1-->
+            <div class="card bg-base-100 shadow-xl p-5">
+                <figure class="px-10 pt-10 bg-slate-300">
+                  <img src="./images/prod1.png" alt="Product 1" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                  <h2 class="card-title">K. Accessories!</h2>
+                  <p>39.00 TK</p>
+                </div>
+              </div>
+                <!-- product card 2-->
+            <div class="card bg-base-100 shadow-xl p-5">
+                <figure class="px-10 pt-10 bg-slate-300">
+                  <img src="./images/prod2.png" alt="Product 1" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                  <h2 class="card-title">K. Accessories!</h2>
+                  <p>39.00 TK</p>
+                </div>
+              </div>
+                <!-- product card 3-->
+            <div class="card bg-base-100 shadow-xl p-5">
+                <figure class="px-10 pt-10 bg-slate-300">
+                  <img src="./images/prod3.png" alt="Product 1" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                  <h2 class="card-title">K. Accessories!</h2>
+                  <p>39.00 TK</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sportswear -->
+            <h2 class="text-4xl font-bold mt-20">Sportswear</h2>
             
         </div>
+        
+        
 
-        <div>
+        <div class=" ml-10 lg:mr-20">
             <!-- cart part -->
+            <div class="">
+                <!-- coupon part  -->
+                <h2 class="text-base font-semibold mb-3">Have Coupon?</h2>
+                <input class="w-56 px-10 py-2  bg-slate-200 border-gray-400" type="text" placeholder="Coupon code">
+                <button class="bg-[#E527B2] px-10 py-2 text-white">Apply</button>
+            </div>
+            <!-- purchase item container  -->
+            <div class="mt-3">
+                <p>1. demo item</p>
+                <p>1. demo item</p>
+                <p>1. demo item</p>
+            </div>
+            <hr>
+
+            <!-- price container  -->
+            <div class="mt-3">
+                <p>Total Price: 00.00TK</p>
+                <p>Discount : 00.00TK</p>
+                <p>Total: 00.00TK</p>
+            </div>
+            <hr>
+            <div class="mt-3">
+                <button class="bg-[#E527B2] px-10 py-2 text-white rounded">Make Purchase</button>
+            </div>
 
         </div>
+        
     </main>
 </body>
 
