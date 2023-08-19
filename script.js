@@ -14,19 +14,31 @@ function productCard(target){
     // getting the price from individual card 
     const price = target.childNodes[3].childNodes[5].innerText;
     totalPrice = parseFloat(totalPrice) + parseFloat(price);
-    totalPriceDeci = totalPrice.toFixed(2);
+    const totalPriceDeci = totalPrice.toFixed(2);
+
+    if(totalPriceDeci <= 0){
+        document.getElementById('purchase-btn').disabled = true;
+    }else{
+        document.getElementById('purchase-btn').disabled = false;
+    }
 
     if(totalPriceDeci < 200 ){
         document.getElementById("coupon-btn").disabled = true;
+        return;
+    }else{
+        document.getElementById("coupon-btn").disabled = false;
+        return;
     }
 
     // calculating the discount amount 
     discount = totalPriceDeci * 0.2;
-    discountDeci = discount.toFixed(2)
+    const discountDeci = discount.toFixed(2);
+    
+    
 
     // calculating the grand total amount
     grandTotal = totalPriceDeci - discountDeci;
-    grandTotalDeci = grandTotal.toFixed(2);
+    const grandTotalDeci = grandTotal.toFixed(2);
 
     // setting the total price, discount and grand total in the cart
     document.getElementById('total-price').innerText = totalPriceDeci;
@@ -35,5 +47,5 @@ function productCard(target){
     
 
 
-    console.log(grandTotalDeci);
+
 }
