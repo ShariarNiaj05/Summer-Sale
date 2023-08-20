@@ -1,7 +1,10 @@
+
 let totalPrice = 0;
 let discount = 0;
 let grandTotal = 0;
 function productCard(target){
+
+    
     // getting the item name
     const cartItemContainer = document.getElementById('cart-item-container');
     const itemName = target.childNodes[3].childNodes[3].innerText;
@@ -24,13 +27,14 @@ function productCard(target){
 
     if(totalPriceDeci < 200 ){
         document.getElementById("coupon-btn").disabled = true;
-        return;
+    
     }else{
         document.getElementById("coupon-btn").disabled = false;
-        return;
+    
     }
 
     // calculating the discount amount 
+    
     discount = totalPriceDeci * 0.2;
     const discountDeci = discount.toFixed(2);
     
@@ -49,3 +53,10 @@ function productCard(target){
 
 
 }
+
+
+// go home button redirection 
+document.getElementById('goHome-btn').addEventListener('click', function(){
+    window.location.href = 'index.html'
+})
+
